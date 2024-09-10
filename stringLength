@@ -1,0 +1,12 @@
+using System;
+
+class StringTruncation
+{
+    static void Main(string[] args)
+    {
+        string originalString = "Sahjadalam Mansuri";
+        int maxLength = 3;
+        string truncatedString = originalString.Substring(0, Math.Min(maxLength, originalString.Length)) + "...";
+        Console.WriteLine(truncatedString);
+    }
+}
